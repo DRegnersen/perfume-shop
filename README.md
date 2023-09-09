@@ -1,2 +1,2 @@
-# perfume-shop
-Perfume shop project
+# Perfume Shop
+Дубовиков Денис Алексеевич - M33031
