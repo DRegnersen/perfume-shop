@@ -73,7 +73,7 @@
     display: flex;
 }
 
-.nav-bar__item {
+.nav-bar__list li{
     margin-left: 12px;
     text-transform: uppercase;
     letter-spacing: 0.2em;
@@ -81,17 +81,17 @@
 }
 
 @media screen and (min-width: 700px) {
-    .nav-bar__item {
+    .nav-bar__list li {
         margin-left: 32px;
     }
 }
 
-.nav-bar__item-text{
+.nav-bar__item{
     text-decoration: none;
     color: black;
 }
 
-.nav-bar__item-text__active{
+.nav-bar__item__active{
     text-decoration: underline;
     text-decoration-skip-ink: none;
     text-underline-offset: 0.2em;
