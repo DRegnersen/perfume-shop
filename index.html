@@ -7,12 +7,38 @@
     <link href="css/styles.css" rel="stylesheet">
     <link href="css/index-styles.css" rel="stylesheet">
     <title>Home • Southern Wind</title>
+    <script src="scripts/selectNavBarItem.js"></script>
 </head>
 <body class="body">
-<!--#include file="header.html" -->
+<header class="header">
+    <nav class="nav-bar">
+        <div class="nav-bar__logo">
+            <a>
+                <img src="img/logo-2-1.svg" class="nav-bar__logo-image" alt="Logo">
+                <div class="nav-bar__logo-title">Southern Wind</div>
+            </a>
+        </div>
+        <ul class="nav-bar__list">
+            <li class="nav-bar__item">
+                <a class="nav-bar__item-text" href="index.html">Home</a>
+            </li>
+            <li class="nav-bar__item">
+                <a class="nav-bar__item-text" href="products.html">Products</a>
+            </li>
+            <li class="nav-bar__item">
+                <a class="nav-bar__item-text" href="account.html">Account</a>
+            </li>
+            <li class="nav-bar__item">
+                <a class="nav-bar__item-text" href="cart.html">Cart</a>
+            </li>
+        </ul>
+        <div class="nav-bar__bookmark">
+            <img src="img/bookmark-5-1.svg" class="nav-bar__bookmark-image" alt="bookmark">
+        </div>
+    </nav>
+</header>
 <main class="main">
     <div class="about-us">
-        <h5>About us</h5>
         <section>
             <h3>What do we offer?</h3>
             <p>Here you can discover and acquire your unique inspiration</p>
@@ -60,6 +86,10 @@
         </a>
     </div>
 </main>
-<!--#include file="footer.html" -->
+<footer class="footer">
+    <section>
+        <strong>© Southern Wind, 2023</strong>
+    </section>
+</footer>
 </body>
 </html>

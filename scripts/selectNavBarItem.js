@@ -11,3 +11,5 @@ function selectNavBarItem() {
         }
     });
 }
+
+window.addEventListener('load', selectNavBarItem)

@@ -7,12 +7,12 @@
     letter-spacing: 0.075em;
 }
 
-.about-us h5 {
-    text-transform: uppercase;
+.about-us section ul li{
+    margin-bottom: 4px;
 }
 
 .about-us h3 {
-    font-size: 24px;
+    font-size: 20px;
 }
 
 .article-grid {

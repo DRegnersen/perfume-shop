@@ -36,6 +36,7 @@
 
 .nav-bar__bookmark {
     display: none;
+    z-index: 3;
 }
 
 @media screen and (min-width: 1000px) {
@@ -60,9 +61,11 @@
     .nav-bar__logo-title {
         display: inline-block;
         padding-left: 8px;
-        font-size: 24px;
-        font-weight: 700;
         line-height: 100px;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        font-size: 18px;
+        font-weight: 700;
     }
 }
 
@@ -90,6 +93,8 @@
 
 .nav-bar__item-text__active{
     text-decoration: underline;
+    text-decoration-skip-ink: none;
+    text-underline-offset: 0.2em;
 }
 
 .main {
