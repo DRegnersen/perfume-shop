@@ -12,4 +12,4 @@ function selectNavBarButton() {
     });
 }
 
-window.addEventListener('load', selectNavBarButton)
+window.addEventListener('load', selectNavBarButton);

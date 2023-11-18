@@ -1,7 +1,13 @@
-function showLoadingTime() {
-    const loadingTime = window.performance.timing.domContentLoadedEventEnd - window.performance.timing.navigationStart;
+(function () {
+    function showLoadingTime() {
+        const startTime = performance.now();
 
-    document.getElementById('loadingTime').innerText = 'Page loaded in ' + loadingTime + ' ms'
-}
+        window.addEventListener('load', function () {
+            const loadingTime = Math.round(performance.now() - startTime);
 
-window.addEventListener('load', showLoadingTime)
+            document.getElementById('loadingTime').innerText = 'Page loaded in ' + loadingTime + ' ms';
+        });
+    }
+
+    showLoadingTime();
+})();
