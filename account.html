@@ -5,12 +5,15 @@
     <meta name="keywords" content="Southern Wind; Perfume">
     <meta name="description" content="Southern Wind account page">
     <link href="css/styles.css" rel="stylesheet">
+    <link href="css/account-styles.css" rel="stylesheet">
     <title>Account • Southern Wind</title>
 
     <script src="scripts/selectNavBarButton.js"></script>
     <script src="scripts/hoverNavBarButton.js"></script>
     <script src="scripts/showLoadingTime.js"></script>
     <script src="scripts/scrollToTop.js"></script>
+
+    <script src="scripts/addNewFavorite.js"></script>
 </head>
 <body class="body">
 <header class="header">
@@ -32,7 +35,27 @@
     </nav>
 </header>
 <main class="main">
-
+    <div id="accountCard" class="card">
+        <span class="card__avatar">
+            <img src="img/avatar.jpg" alt="Avatar">
+        </span>
+        <section>
+            <h3>Roman Makarevich</h3>
+            <p>Contacts: <a href="https://t.me/ukcrem">@ukcrem</a></p>
+        </section>
+        <section>
+            <h3>You can customize your favorites</h3>
+            <p>Just select here what offers do you want to see</p>
+            <ul id="favoritesList" class="favorites">
+                <li>
+                    <form onsubmit="event.preventDefault(); addNewFavorite();">
+                        <label for="newFavoriteTag">New favorite: </label>
+                        <input id="newFavoriteTag" type="text" required>
+                    </form>
+                </li>
+            </ul>
+        </section>
+    </div>
 </main>
 <footer class="footer">
     <p class="footer__copyright">© Southern Wind, 2023</p>
