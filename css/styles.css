@@ -106,9 +106,18 @@
     width: 100%;
 }
 
+.main div {
+    margin: 0.5cm 0.75cm;
+    border-radius: 10px;
+}
+
 @media screen and (min-width: 1000px) {
     .main {
         width: 85%;
+    }
+
+    .main div {
+        width: 100%;
     }
 }
 
@@ -117,12 +126,6 @@
         width: 75%;
         padding: 0 7%;
     }
-}
-
-.main div {
-    width: 100%;
-    margin: 0.5cm 0.75cm;
-    border-radius: 10px;
 }
 
 .card {
@@ -134,7 +137,7 @@
     letter-spacing: 0.075em;
 }
 
-.card ul li{
+.card ul li {
     margin-bottom: 4px;
 }
 
