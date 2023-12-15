@@ -1,0 +1,82 @@
+.products-grid {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0.5cm 1cm;
+    column-gap: 1cm;
+    row-gap: 1cm;
+    height: 1400px;
+}
+
+@media screen and (min-width: 1000px) {
+    .products-grid {
+        grid-template-columns: repeat(4, 1fr);
+        height: 700px;
+    }
+}
+
+.products-grid div{
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+}
+
+.product-card {
+    background: var(--light-box-color);
+    border: var(--border-len) solid var(--light-border-color);
+}
+
+.product-card img {
+    display: flex;
+    max-height: 100%;
+    max-width: 100%;
+    border-radius: 2%;
+}
+
+.product-preload {
+    background: gray;
+    animation: product-preload 1.2s linear infinite;
+}
+
+.product-preload:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.product-preload:nth-child(2) {
+    animation-delay: -0.4s;
+}
+
+.product-preload:nth-child(3) {
+    animation-delay: -0.8s;
+}
+
+.product-preload:nth-child(4) {
+    animation-delay: -0.4s;
+}
+
+.product-preload:nth-child(5) {
+    animation-delay: -0.8s;
+}
+
+.product-preload:nth-child(6) {
+    animation-delay: -1.2s;
+}
+
+.product-preload:nth-child(7) {
+    animation-delay: -0.8s;
+}
+
+.product-preload:nth-child(8) {
+    animation-delay: -1.2s;
+}
+
+@keyframes product-preload {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+}
