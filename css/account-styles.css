@@ -1,0 +1,43 @@
+.card__avatar {
+    display: inline-block;
+    border-radius: 50%;
+    overflow: hidden;
+    width: 200px;
+    height: 200px;
+    border: var(--border-len) solid var(--light-border-color);
+}
+
+.card__avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card a{
+    color: var(--red-strip-color);
+}
+
+.favorites input{
+    border: none;
+    border-radius: 10px;
+    padding: 6px 4px;
+    background-color: snow;
+    font-size: 16px;
+}
+
+.favorites input:hover{
+    opacity: .75;
+}
+
+.favorites button{
+    border: none;
+    border-radius: 10px;
+    padding: 6px 4px;
+    margin-left: 7px;
+    background-color: snow;
+    font-size: 16px;
+}
+
+.favorites button:hover{
+    opacity: .75;
+}
