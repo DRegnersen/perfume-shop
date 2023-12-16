@@ -27,29 +27,31 @@ async function fetchProducts(loadFrom, productsNumber) {
 }
 
 function endPreload() {
-    const productsDiv = document.getElementById("products");
-    const preloadDivs = productsDiv.querySelectorAll("div");
+    const productsGrid = document.getElementById('products');
+    const preloadDivs = productsGrid.querySelectorAll("div");
 
     preloadDivs.forEach(div => {
         div.remove();
     });
+
+    productsGrid.style.height = 'auto'
 }
 
 function createProduct(title, thumbnailUrl) {
-    const product = document.createElement("div");
-    product.classList.add("product-card");
+    const product = document.createElement('div');
+    product.classList.add('product-card');
 
-    const image = document.createElement("img");
+    const image = document.createElement('img');
     image.src = thumbnailUrl
     image.alt = title.substring(0, 10);
 
-    const description = document.createElement("p");
+    const description = document.createElement('p');
     description.textContent = title;
 
     product.appendChild(image);
     product.appendChild(description);
 
-    const productsDiv = document.getElementById("products");
+    const productsDiv = document.getElementById('products');
     productsDiv.appendChild(product);
 }
 
