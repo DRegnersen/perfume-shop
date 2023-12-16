@@ -22,7 +22,7 @@ async function fetchProducts(loadFrom, productsNumber) {
         return await response.json();
 
     } catch (error) {
-        console.error(error);
+        handleError(error)
     }
 }
 
@@ -53,6 +53,13 @@ function createProduct(title, thumbnailUrl) {
 
     const productsDiv = document.getElementById('products');
     productsDiv.appendChild(product);
+}
+
+function handleError(error){
+    console.error(error)
+
+    const serviceMessage = document.getElementById('serviceMessage')
+    serviceMessage.innerText = 'Something went wrong'
 }
 
 function delay(delay) {
