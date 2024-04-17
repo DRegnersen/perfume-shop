@@ -1,5 +1,5 @@
 async function loadProducts() {
-    await delay(1000);
+    await delay(100);
 
     const loadFrom = Math.floor(Math.random() * 3000);
     const products = await fetchProducts(loadFrom, 40);
