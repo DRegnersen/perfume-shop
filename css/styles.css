@@ -103,6 +103,7 @@
 }
 
 .main {
+    flex-grow: 1;
     width: 100%;
 }
 
@@ -148,9 +149,7 @@
 .footer {
     display: flex;
     align-content: space-between;
-    position: relative;
     padding: 0.75cm 1cm;
-    margin-top: auto;
     background: var(--light-box-color);
     border-top: var(--border-len) solid var(--light-border-color);
 }
@@ -164,7 +163,7 @@
     letter-spacing: 0.075em;
 }
 
-.footer__loading-time {
+.footer__service-message {
     width: 100%;
     float: right;
     text-align: right;
